@@ -3,11 +3,6 @@ title: Ubuntu 使用配置
 date: 2020-02-25 23:40:27
 tags: [Ubuntu, Linux, 教程]
 ---
-
-[TOC]
-
-# <b>Ubuntu使用配置</b>
-
 ## <b>【系统】</b>
 
 ## 1. ubuntu无法识别固态硬盘上的windows操作系统
