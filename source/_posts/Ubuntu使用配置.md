@@ -77,28 +77,28 @@ sudo update-grub		#更新grub缓存
     1.2 临时的：使用export命令声明即可，变量在关闭shell时失效。
 2.  设置变量的三种方法
     2.1 在/etc/profile文件中添加变量【对所有用户生效(永久的)】
-    用VI在文件/etc/profile文件中增加变量，该变量将会对Linux下所有用户有效，并且是“永久的”。
 
 ```bash
+#用gedit在文件/etc/profile文件中增加变量，该变量将会对Linux下所有用户有效，并且是“永久的”。
 #例如：编辑/etc/profile文件，添加CLASSPATH变量
-vi /etc/profile
+gedit /etc/profile
 export CLASSPATH=./JAVA_HOME/lib; $JAVA_HOME/jre/lib
 source /etc/profile		#注：修改文件后要想马上生效时运行，不然只能在下次重进此用户时生效。
 ```
 
 ​	2.2 在个人用户主目录下的~/.bashrc中增加变量【对单一用户生效(永久的)】
-用VI在用户目录下的~/.bashrc文件中增加变量，改变量仅会对当前用户有效，并且是“永久的”。
 
 ```bash
+#用gedit在用户目录下的~/.bashrc文件中增加变量，改变量仅会对当前用户有效，并且是“永久的”。
 #例如：编辑emos用户目录 (/home/emos)下的.bashrc
-vi ~/.bashrc
+gedit ~/.bashrc
 #添加如下内容：
 export CLASSPATH=./JAVA_HOME/lib; $JAVA_HOME/jre/lib
 #注：修改文件后要想马上生效还要运行 source ~/.bashrc,不然只能在下次重进此用户时生效。
 ```
 
 ​	2.3 直接运行export命令定义变量【只对当前shell(BASH)有效(临时的)】
-​	在shell的命令行下直接使用**[export 变量名=变量值]** 定义变量，该变量只在当前的shell(BASH)或其子shell(BASH)下是有效的，shell关闭了，变量也就失效了，再打开新shell时就没有这个变量，需要使用的话还需要重新定义。
+​		在shell的命令行下直接使用**[export 变量名=变量值]** 定义变量，该变量只在当前的shell(BASH)或其子shell(BASH)下是有效的，shell关闭了，变量也就失效了，再打开新shell时就没有这个变量，需要使用的话还需要重新定义。
 
 3.  环境变量的查看
     3.1 使用echo命令查看单个环境变量。例如：
@@ -170,8 +170,10 @@ sudo apt-get install xfonts-wqy 		#文泉驿-点阵宋体
 
 ## 4. 安装微信
 
-1. 下载链接：https://github.com/geeeeeeeeek/electronic-wechat/releases
-2. 解压linux-x64.tar.gz到指定目录，直接点击electronic-wechat运行即可
+```yaml
+   1. 下载链接：https://github.com/geeeeeeeeek/electronic-wechat/releases
+   2. 解压linux-x64.tar.gz到指定目录，直接点击electronic-wechat运行即可
+```
 
 ## 5. 安装sublime-text-3(stable)
 
@@ -191,12 +193,12 @@ sudo apt-get install -f
 sudo apt-get update		#注销后重新登录可配置输入法
 ```
 
-## ## 7. 解决搜狗输入法显示中文乱码的问题
+## 7. 解决搜狗输入法显示中文乱码的问题
 
 ```bash
 cd ~/.config
 rm -rf SogouPY* sogou*
-注销重新登录
+#注销重新登录
 ```
 
 ## <b>【其他】</b>
@@ -224,5 +226,9 @@ sudo cp winewrapper.exe.so /opt/cxoffice/lib/wine
 
 ## 3. CrossOver 17 安装Office 365
 
+```yaml
 1.  选择安装应用：Office 2016，Windows7
 2.  选择Office365_ProPlus.exe (32位安装包)，等待联网安装
+```
+
+   
