@@ -1,12 +1,10 @@
 ---
-title: Ubuntu16.04 使用配置
+title: Ubuntu 使用配置
 date: 2020-02-25 23:40:27
-tags: [Ubuntu16.04, Linux, 教程]
+tags: [Ubuntu, Linux, 教程]
 ---
 
 [TOC]
-
-
 
 # <b>Ubuntu使用配置</b>
 
@@ -38,6 +36,7 @@ sudo gedit /etc/hosts
 sudo mkfontscale		#生成字体的索引信息
 sudo mkfontdir
 sudo fc-cache -f -v
+#可以将WindowsFonts文件夹复制到/usr/share/fonts/ 文件目录下之后运行生成字体索引等，丰富字体
 ```
 
 ## 5. 误删除/var/lib/dpkg解决办法
@@ -139,6 +138,15 @@ export CLASSPATH=./JAVA_HOME/lib; $JAVA_HOME/jre/lib
     PS1			#基本提示符，对于root用户是#，对于普通用户是$
     ```
     
+## 9. Ubuntu菜单栏出现两个输入法图标的解决办法
+```bash
+#安装搜狗输入法更新系统后，菜单栏出现两个输入法图标。
+#这两个图标一个是搜狗用的fcitx-ui-classic，另一个是fcitx的fcitx-ui-qimpanel。
+#而删除 fcitx-ui-qimpanel，只保留 fcitx-ui-classic就可以解决问题了，打开终端执行：
+sudo apt-get remove fcitx-ui-qimpanel
+#注销或重启系统即可
+```
+
 ## <b>【软件】</b>
 
 ## 1. 删除系统中不常用软件
@@ -148,12 +156,12 @@ sudo apt-get remove libreoffice* -y
 sudo apt-get remove totem rhythmbox empathy brasero simple-scan gnome-mahjongg aisleriot gnome-mines cheese transmission-common gnome-orca webbrowser-app gnome-sudoku landscape-client-ui-install -y
 ```
 
-## 2. 安装常用软件
+## 2. 安装常用软件（VLC, Shutter, WPS）
 
 ```bash
 sudo apt-get install vlc -y			#VLC播放器
 sudo apt-get install shutter -y		#shutter截图软件
-# WPS 2019 官方下载地址：https://linux.wps.cn/#
+#WPS 2019 官方下载地址：https://linux.wps.cn/#
 sudo dpkg -i wps-office_11.1.0.9080_amd64.deb #wps软件包需在官网自行下载
 ```
 
@@ -188,6 +196,14 @@ sudo apt-get install -f
 sudo apt-get update		#注销后重新登录可配置输入法
 ```
 
+## ## 7. 解决搜狗输入法显示中文乱码的问题
+
+```bash
+cd ~/.config
+rm -rf SogouPY* sogou*
+注销重新登录
+```
+
 ## <b>【其他】</b>
 
 ## 1. Ubuntu系统安装genymotion安卓模拟器
@@ -202,13 +218,13 @@ sudo apt-get install virtualbox-dkms
 ## 2. Ubuntu系统安装Windows软件-CrossOver 17 for Linux
 
 ```bash
-# 安装CrossOver17，相关配置可以百度
+#安装CrossOver17，相关配置可以百度
 sudo dpkg -i crossover17.deb
 sudo apt-get install -f
 sudo apt-get update
-# 破解方法：找到winewrapper.exe.so文件后执行命令（不提示试用相当于正常使用）
+#破解方法：找到winewrapper.exe.so文件后执行命令（不提示试用相当于正常使用）
 sudo cp winewrapper.exe.so /opt/cxoffice/lib/wine
-# 实测可以运行Office365ProPlus，Tim
+#实测可以运行Office365ProPlus，Tim
 ```
 
 ## 3. CrossOver 17 安装Office 365
