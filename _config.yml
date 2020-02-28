@@ -93,7 +93,7 @@ ignore:
 # Extensions 扩展
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: material-x
+theme: volantis
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -106,3 +106,10 @@ deploy:
 leancloud:
   app_id: 1Qd7cKBjqSznyS33ms7Ibaac-gzGzoHsz
   app_key: jBa3k8yhxlLeLl2eVzOdtCQW
+
+copyright: '[Copyright © 2017-2020 Mr. N](https://niuhuan.site)'
+
+# # 网站图标，更多尺寸等图标请使用import方式批量导入
+# favicon: /img/favicon/favicon.ico
+# # 作者头像，会出现在文章标题下方，不同于侧边栏的大头像
+# avatar: /img/avatar/avatar.png
