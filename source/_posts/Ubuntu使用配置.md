@@ -1,9 +1,20 @@
 ---
 title: Ubuntu 使用配置
 date: 2020-02-25 23:40:27
-tags: [Ubuntu, Linux, 教程]
+body: [article, comments]
+categories: [Ubuntu]
+tags:
+  - 系统
+  - Ubuntu
+  - Linux
 ---
+
+本文主要介绍Ubuntu系统使用时的配置和常见问题解决方法。
+
+<!-- more -->
+
 ## <b>【系统】</b>
+
 ## 1. ubuntu无法识别固态硬盘上的windows操作系统
 ```bash
 sudo apt-get install ntfs-3g
@@ -139,8 +150,8 @@ sudo apt-get install xfonts-wqy 		#文泉驿-点阵宋体
 ```
 ## 4. 安装微信
 ```yaml
-   1. 下载链接：https://github.com/geeeeeeeeek/electronic-wechat/releases
-   2. 解压linux-x64.tar.gz到指定目录，直接点击electronic-wechat运行即可
+   下载链接：https://github.com/geeeeeeeeek/electronic-wechat/releases/
+   解压linux-x64.tar.gz到指定目录，直接点击electronic-wechat运行即可
 ```
 ## 5. 安装sublime-text-3(stable)
 ```bash

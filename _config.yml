@@ -1,8 +1,8 @@
-# Hexo Configuration # Hexo配置文档
+# Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-# Site # 网址
+# 网址
 title: 个人博客
 subtitle: ''
 description: ''
@@ -86,14 +86,15 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include: 
+include:
 exclude:
 ignore:
 
-# Extensions 扩展
+# Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: volantis
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -109,7 +110,3 @@ leancloud:
 
 copyright: '[Copyright © 2017-2020 Mr. Niu](https://niuhuan.site)'
 
-# # 网站图标，更多尺寸等图标请使用import方式批量导入
-# favicon: /img/favicon/favicon.ico
-# # 作者头像，会出现在文章标题下方，不同于侧边栏的大头像
-# avatar: /img/avatar/avatar.png
