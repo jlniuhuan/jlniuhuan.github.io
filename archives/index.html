@@ -24,6 +24,10 @@
 
   
   
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+
+  
 
   
 
@@ -359,97 +363,6 @@
     
       
     
-      
-        
-
-<section class="widget grid  widget-blur desktop mobile">
-  
-  <header>
-    
-      <i class="fas fa-map-signs fa-fw" aria-hidden="true"></i><span class='name'>文档导航</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <ul class="grid navigation">
-      
-        <li><a class="flat-box" title="/faqs/" href="/faqs/"
-          
-          
-          id="faqs">
-          
-            <i class="fas fa-question-circle fa-fw" aria-hidden="true"></i>
-          
-          常见问题
-        </a></li>
-      
-        <li><a class="flat-box" title="/examples/" href="/examples/"
-          
-          
-          id="examples">
-          
-            <i class="fas fa-play-circle fa-fw" aria-hidden="true"></i>
-          
-          示例博客
-        </a></li>
-      
-        <li><a class="flat-box" title="/contributors/" href="/contributors/"
-          
-          
-          id="contributors">
-          
-            <i class="fas fa-handshake fa-fw" aria-hidden="true"></i>
-          
-          特别感谢
-        </a></li>
-      
-        <li><a class="flat-box" title="/news/archives/" href="/news/archives/"
-          
-          
-          id="newsarchives">
-          
-            <i class="fas fa-file-archive fa-fw" aria-hidden="true"></i>
-          
-          历史事件
-        </a></li>
-      
-        <li><a class="flat-box" title="https://github.com/xaoxuu/hexo-theme-volantis/" href="https://github.com/xaoxuu/hexo-theme-volantis/"
-          
-            rel="external nofollow noopener noreferrer"
-          
-          
-            target="_blank"
-          
-          id="https:github.comxaoxuuhexo-theme-volantis">
-          
-            <i class="fas fa-file-code fa-fw" aria-hidden="true"></i>
-          
-          主题源码
-        </a></li>
-      
-        <li><a class="flat-box" title="https://github.com/xaoxuu/hexo-theme-volantis/releases/" href="https://github.com/xaoxuu/hexo-theme-volantis/releases/"
-          
-            rel="external nofollow noopener noreferrer"
-          
-          
-            target="_blank"
-          
-          id="https:github.comxaoxuuhexo-theme-volantisreleases">
-          
-            <i class="fas fa-clipboard-list fa-fw" aria-hidden="true"></i>
-          
-          更新日志
-        </a></li>
-      
-    </ul>
-  </div>
-</section>
-
-      
-    
-      
-    
   
     
       
@@ -464,39 +377,6 @@
     
       
     
-      
-    
-      
-    
-      
-        
-
-<section class="widget text  widget-blur desktop">
-  
-  <header>
-    
-      <a href='https://github.com/xaoxuu/' target="_blank" rel="noopener"><i class="fab fa-github fa-fw" aria-hidden="true"></i><span class='name'>点个赞吧</span></a>
-    
-  </header>
-
-
-  <div class='content'>
-    
-      <p>您的赞对我来说很重要，如果您喜欢本主题，希望能够给下面的项目点个赞来支持一下。</p>
-
-    
-      <p><a href="https://github.com/xaoxuu/ProHUD" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/logo.png" height="50px"></a></p>
-
-    
-      <p><a href="https://github.com/xaoxuu/ValueX" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/valuex/logo.png" height="50px"></a></p>
-
-    
-      <p><a href="https://github.com/xaoxuu/Inspire" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/inspire/logo.png" height="50px"></a></p>
-
-    
-  </div>
-</section>
-
       
     
   
@@ -520,7 +400,7 @@
   
   <header>
     
-      <i class="fas fa-mobile fa-fw" aria-hidden="true"></i><span class='name'>手机观看</span>
+      <i class="fas fa-mobile fa-fw" aria-hidden="true"></i><span class='name'>手机浏览</span>
     
   </header>
 
@@ -528,17 +408,13 @@
   <div class='content article-entry'>
     
       
-        <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png'
+        <img src='https://cdn.jsdelivr.net/gh/jlniuhuan/jlniuhuan.github.io@master/img/site_qrcode.png'
         >
       
     
   </div>
 </section>
 
-      
-    
-      
-    
       
     
   
@@ -558,7 +434,7 @@
         
       
         
-          <a href="mailto:me@xaoxuu.com"
+          <a href="mailto:jlniuhuan@outlook.com"
             class="social fas fa-envelope flat-btn"
             target="_blank"
             rel="external nofollow noopener noreferrer">
@@ -566,16 +442,8 @@
         
       
         
-          <a href="https://github.com/xaoxuu"
+          <a href="https://github.com/jlniuhuan"
             class="social fab fa-github flat-btn"
-            target="_blank"
-            rel="external nofollow noopener noreferrer">
-          </a>
-        
-      
-        
-          <a href="https://music.163.com/#/user/home?id=63035382"
-            class="social fas fa-headphones-alt flat-btn"
             target="_blank"
             rel="external nofollow noopener noreferrer">
           </a>
@@ -637,6 +505,31 @@
 
 
 
+  <script src="//cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  
+<script src="//cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js" async></script>
+
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
 
 
   <script async src="//cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
@@ -691,11 +584,95 @@
 
 
   
-<script src="//cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@20.2.41/js/comment_typing.js"></script>
+<script src="//cdn.jsdelivr.net/gh/jlniuhuan/jlniuhuan.github.io@master/js/comment_typing.js"></script>
 
 
 
 <!-- 复制 -->
+
+  <script src="//cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "复制成功";
+  let COPY_FAILURE = "复制失败";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>复制</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
 
 
 
