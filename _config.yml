@@ -110,3 +110,8 @@ leancloud:
 
 copyright: '[Copyright © 2017-2020 Mr. Niu](https://niuhuan.site)'
 
+# hexo-admin authentification
+admin:
+  username: niuhuan
+  password_hash: $2a$10$TmbIfaXzxhxQtF5d4DCLKuHOfT57.aIjsJhkb2M2qbMz.00pTvsca
+  secret: Harry's blog
