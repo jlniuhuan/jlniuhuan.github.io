@@ -16,7 +16,7 @@
 }
 @font-face {
   font-family: 'Varela Round';
-  src: url("https://cdn.jsdelivr.net/gh/xaoxuu/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf");
+  src: url("https://cdn.jsdelivr.net/gh/jlniuhuan/jlniuhuan.github.io@master/fonts/VarelaRound/VarelaRound-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
 }
@@ -405,6 +405,51 @@ th {
   color: rgba(68,68,68,0.65);
   font-size: 0.75rem;
   padding: 4px 8px;
+}
+.highlight.html .code:before {
+  content: "HTML";
+}
+.highlight.js .code:before {
+  content: "JS";
+}
+.highlight.bash .code:before {
+  content: "bash";
+}
+.highlight.shell .code:before {
+  content: "shell";
+}
+.highlight.css .code:before {
+  content: "css";
+}
+.highlight.less .code:before {
+  content: "less";
+}
+.highlight.stylus .code:before {
+  content: "stylus";
+}
+.highlight.swift .code:before {
+  content: "Swift";
+}
+.highlight.objc .code:before {
+  content: "ObjC";
+}
+.highlight.c .code:before {
+  content: "C";
+}
+.highlight.cpp .code:before {
+  content: "C++";
+}
+.highlight.java .code:before {
+  content: "Java";
+}
+.highlight.python .code:before {
+  content: "Python";
+}
+.highlight.yaml .code:before {
+  content: "YAML";
+}
+.highlight.plain .code:before {
+  content: "";
 }
 pre .line {
   color: rgba(68,68,68,0.9);
