@@ -5,7 +5,6 @@ body: [article]
 meta:
   header: [title]
   footer: false
-sidebar: false
 ---
 ### **网站地址：https://niuhuan.site**
 
@@ -13,4 +12,5 @@ sidebar: false
 
 ### **联系方式：niuhuan@outlook.com**
 
-### **网站主题：Volantis 1.6.2**
+### **网站主题：Volantis**
+
