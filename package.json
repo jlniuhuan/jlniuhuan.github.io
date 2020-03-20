@@ -30,6 +30,6 @@
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
     "hexo-wordcount": "^6.0.1",
-    "leancloud-storage": "^4.2.0"
+    "leancloud-storage": "^4.4.0"
   }
 }

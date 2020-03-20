@@ -2,7 +2,7 @@
 title: Ubuntu 使用配置
 date: 2020-02-25 23:40:27
 body: [article, comments]
-categories: [Ubuntu]
+categories: [教程]
 tags:
   - 系统
   - Ubuntu
