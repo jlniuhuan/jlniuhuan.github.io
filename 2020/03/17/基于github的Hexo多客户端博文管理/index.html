@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head hexo-theme='https://volantis.js.org/#2.1.5'>
+<head hexo-theme='https://volantis.js.org/#2.2.0'>
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -380,7 +380,7 @@
   
   <div class='new-meta-item category'>
     <a href='/categories/hexo/' rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
       <p>hexo</p>
     </a>
   </div>
@@ -391,7 +391,7 @@
           
             <div class="new-meta-item date">
   <a class='notlink'>
-    <i class="fas fa-edit" aria-hidden="true"></i>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>发布于：2020年3月17日</p>
   </a>
 </div>
@@ -403,7 +403,7 @@
   
     <div class="new-meta-item browse busuanzi">
       <a class='notlink'>
-        <i class="fas fa-eye" aria-hidden="true"></i>
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <p>
           <span id="busuanzi_value_page_pv">
             <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
@@ -420,13 +420,13 @@
             
   <div class="new-meta-item wordcount">
     <a class='notlink'>
-      <i class="fas fa-keyboard" aria-hidden="true"></i>
+      <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
       <p>字数：310字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
-      <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+      <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
       <p>时长：1分钟</p>
     </a>
   </div>
@@ -501,7 +501,7 @@
         
           <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-03-17T22:31:10+08:00">
   <a class='notlink'>
-    <i class="fas fa-save" aria-hidden="true"></i>
+    <i class="fas fa-save fa-fw" aria-hidden="true"></i>
     <p>更新于：2020年3月17日</p>
   </a>
 </div>
@@ -511,7 +511,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/github/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i><p>github</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/hexo/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i><p>hexo</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/github/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>github</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/hexo/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>hexo</p></a></div>
 
 
         
@@ -739,7 +739,7 @@
     
   
 
-  <section class="widget tagcloud shadow desktop">
+  <section class="widget tagcloud shadow desktop mobile">
     
   <header>
     
@@ -997,7 +997,7 @@
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script>
   let LAZY_LOAD_IMAGE = "";
-  $(".article-entry").find("fancybox").find("img").each(function () {
+  $(".article-entry").find("div.fancybox").find("img").each(function () {
       var element = document.createElement("a");
       $(element).attr("data-fancybox", "gallery");
       $(element).attr("href", $(this).attr("src"));
