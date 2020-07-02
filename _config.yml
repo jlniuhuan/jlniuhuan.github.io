@@ -94,7 +94,7 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: volantis
-theme: hexo-theme-volantis-2.2.0
+theme: hexo-theme-volantis-2.6.6
 
 
 # Deployment
@@ -103,11 +103,6 @@ deploy:
   type: git
   repository: git@github.com:jlniuhuan/jlniuhuan.github.io.git
   branch: master
-  
-# valine 评论系统配置
-leancloud:
-  app_id: 1Qd7cKBjqSznyS33ms7Ibaac-gzGzoHsz
-  app_key: jBa3k8yhxlLeLl2eVzOdtCQW
 
 # hexo-admin authentification
 admin:
