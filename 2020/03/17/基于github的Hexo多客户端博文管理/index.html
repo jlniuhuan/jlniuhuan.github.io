@@ -396,16 +396,17 @@
           
             
               
-  
-    <div class="new-meta-item browse busuanzi">
-      <a class='notlink'>
-        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
-        <p>
-          <span id="busuanzi_value_page_pv"></span>
-        </p>
-      </a>
-    </div>
-  
+  <div class="new-meta-item browse valine">
+    <a class='notlink'>
+      <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="/2020/03/17/%E5%9F%BA%E4%BA%8Egithub%E7%9A%84Hexo%E5%A4%9A%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%8D%9A%E6%96%87%E7%AE%A1%E7%90%86/" class="leancloud_visitors" data-flag-title="基于github的Hexo多客户端博文管理">
+      <p>
+        <span class="leancloud-visitors-count"></span>
+      </p>
+      </span>
+    </a>
+  </div>
 
 
             
@@ -596,7 +597,30 @@ python使用pip下载安装第三方库时经常会遇到下载速度慢的问�
 
 
 
-  
+  <article class="post white-box reveal comments shadow">
+    <section class="article typo">
+      <p ct><i class='fas fa-comments'></i> 评论</p>
+      
+      
+      
+      
+      
+      
+        <section id="comments">
+          <div id="valine_container" class="valine_thread">
+            <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+          </div>
+        </section>
+      
+      
+        <section id="comments">
+          <div id="minivaline_container">
+            <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+          </div>
+        </section>
+      
+    </section>
+  </article>
 
 
   
@@ -916,7 +940,96 @@ python使用pip下载安装第三方库时经常会遇到下载速度慢的问�
 
 
 
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js"></script>
 
+  
+  <script>
+  var GUEST_INFO = ['nick','mail','link'];
+  var meta = 'nick,mail,link'.split(',').filter(function(item){
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var REQUIRED_FIELDS = ['nick','mail','link'];
+  var requiredFields = 'nick,mail'.split(',').filter(function(item){
+    return REQUIRED_FIELDS.indexOf(item) > -1
+  });
+  var valine = new Valine();
+  function emoji(path, idx, ext) {
+      return path + "/" + path + "-" + idx + "." + ext;
+  }
+  var emojiMaps = {};
+  for (var i = 1; i <= 54; i++) {
+    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+  }
+  for (var i = 1; i <= 101; i++) {
+    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+  }
+  for (var i = 1; i <= 116; i++) {
+    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+  }
+  for (var i = 1; i <= 125; i++) {
+    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+  }
+  for (var i = 1; i <= 4; i++) {
+    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+  }
+  valine.init({
+    el: '#valine_container',
+    meta: meta,
+    
+    appId: "1Qd7cKBjqSznyS33ms7Ibaac-gzGzoHsz",
+    appKey: "jBa3k8yhxlLeLl2eVzOdtCQW",
+    placeholder: "快来评论吧~",
+    pageSize:'10',
+    avatar:'robohash',
+    lang:'zh-cn',
+    visitor: 'true',
+    highlight: 'true',
+    mathJax: 'false',
+    enableQQ: 'false',
+    requiredFields: requiredFields,
+    emojiCDN: 'https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/valine/',
+    emojiMaps: emojiMaps
+  })
+  </script>
+
+
+
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/minivaline@2/dist/MiniValine.min.js"></script>
+
+  
+  
+  
+  
+  
+  <script>
+  new MiniValine({
+	el: '#minivaline_container',
+	appId: '1Qd7cKBjqSznyS33ms7Ibaac-gzGzoHsz',
+	appKey: 'jBa3k8yhxlLeLl2eVzOdtCQW',
+	mode: 'xCss',
+	placeholder: "快来评论吧~",
+	
+	  pathname: location.pathname,
+	
+	lang: '',
+	adminEmailMd5: '41926a588d2fd1398718fc1f6ec88323',
+	tagMeta: ["管理员", "小伙伴", "访客"],
+	master: ["41926a588d2fd1398718fc1f6ec88323"],
+	friends: [""],
+	math: true,  /*布尔值 字符串无效 下同*/
+	md: true,
+	enableQQ: false,
+	NoRecordIP: false,
+	visitor: true,
+	maxNest: 6,
+	pageSize: 6,
+	emoticonUrl: ["https://cdn.jsdelivr.net/npm/alus@latest", "https://cdn.jsdelivr.net/gh/MiniValine/qq@latest", "https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest", "https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest", "https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest", "https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest"]
+  });
+  </script>
 
 
 
